@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Horario escolar de clases para un grupo de instituto.">
+    <meta name="author" content="Tu Nombre">
+    <title>Horario del Instituto - 2º ESO A</title>
+    <style>
+        /* Estilos básicos opcionales para que la tabla se vea ordenada */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #004d80;
+            color: white;
+        }
+        /* Color distintivo para la fila del recreo */
+        .recreo {
+            background-color: #f2f2f2;
+            font-style: italic;
+            color: #555;
+        }
+        tfoot {
+            background-color: #e6f2ff;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Instituto de Educación Secundaria</h1>
+    <p>Consulta a continuación el horario lectivo oficial para el grupo <strong>2º de ESO A</strong>.</p>
+
+    <!-- Tabla HTML principal -->
+    <table>
+        <!-- Título descriptivo de la tabla -->
+        <caption>Horario Semanal - Curso 2026/2027 (2º ESO A)</caption>
+
+        <!-- Definición de columnas y anchos mediante colgroup y col -->
+        <colgroup>
+            <col style="width: 15%;">
+            <col style="width: 17%;">
+            <col style="width: 17%;">
+            <col style="width: 17%;">
+            <col style="width: 17%;">
+            <col style="width: 17%;">
+        </colgroup>
+
+        <!-- Cabecera de la tabla -->
+        <thead>
+            <tr>
+                <th>Tramo Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+
+        <!-- Cuerpo de la tabla (Tramos y 6 horas lectivas + Recreo) -->
+        <tbody>
+            <tr>
+                <td><strong>1ª Hora</strong><br>08:30 - 09:25</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td>Matemáticas</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td><strong>2ª Hora</strong><br>09:25 - 10:20</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td>Geografía</td>
+                <td>Tecnología</td>
+            </tr>
+            <tr>
+                <td><strong>3ª Hora</strong><br>10:20 - 11:15</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Educación Física</td>
+                <td>Inglés</td>
+                <td>Tecnología</td>
+            </tr>
+
+            <!-- Fila del Recreo (utilizando colspan para unir todas las columnas de datos) -->
+            <tr class="recreo">
+                <td><strong>Recreo</strong><br>11:15 - 11:45</td>
+                <td colspan="5">Descanso / Patio / Desayuno saludable</td>
+            </tr>
+
+            <tr>
+                <td><strong>4ª Hora</strong><br>11:45 - 12:40</td>
+                <td>Geografía</td>
+                <td>Ciencias</td>
+                <td>Educación Física</td>
+                <td>Lengua</td>
+                <td>Música</td>
+            </tr>
+            <tr>
+                <td><strong>5ª Hora</strong><br>12:40 - 13:35</td>
+                <td>Inglés</td>
+                <td>Tecnología</td>
+                <td>Música</td>
+                <td>Ciencias</td>
+                <td>Tutora / Orientación</td>
+            </tr>
+            <tr>
+                <td><strong>6ª Hora</strong><br>13:35 - 14:30</td>
+                <td>Plástica</td>
+                <td>Plástica</td>
+                <td>Religión / Valores</td>
+                <td>Francés</td>
+                <td>Educación Física</td>
+            </tr>
+        </tbody>
+
+        <!-- Pie de tabla (Información adicional o notas al margen) -->
+        <tfoot>
+            <tr>
+                <td colspan="6">
+                    * Nota: Las clases de Tecnología y Plástica se imparten en los talleres específicos del edificio anexo.
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
